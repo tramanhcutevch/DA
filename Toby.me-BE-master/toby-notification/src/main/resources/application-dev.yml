@@ -1,0 +1,22 @@
+server:
+  port: 8883
+
+spring:
+  datasource:
+    #    localhost 3306, docker 3307
+    url: jdbc:mysql://localhost:3307/toby_me
+    username: root
+    password: lovecan148
+  redis:
+    database: 0
+    password: 123456a@
+    host: localhost
+    port: 6379
+    timeout: 60000
+
+  kafka:
+    server-config: localhost:29092
+    group-noti-id: noti-group
+    comment-noti-topic: comment-noti-topic
+    follow-noti-topic: follow-noti-topic
+    like-post-noti-topic: like-noti-topic

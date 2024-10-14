@@ -1,0 +1,21 @@
+server:
+  port: 8881
+
+spring:
+  datasource:
+    url: jdbc:mysql://ip_address:3306/db_name
+    username: your_username
+    password: your_password
+  redis:
+    database: 0
+    password: your_password
+    host: ip_address
+    port: 6379
+    timeout: 60000
+
+  kafka:
+    server-config: localhost:29092
+    group-noti-id: noti-group
+    comment-noti-topic: comment-noti-topic
+    follow-noti-topic: follow-noti-topic
+    like-post-noti-topic: like-noti-topic
